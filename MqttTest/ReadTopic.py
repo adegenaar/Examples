@@ -17,7 +17,7 @@ def on_message(client, userdata, msg):
     print(msg.topic + " " + str(msg.payload))
 
 
-def connect_mqtt():
+def connect_mqtt(istest):
     client = mqtt_client.Client()
     client.on_connect = on_connect
     client.on_message = on_message
@@ -25,7 +25,8 @@ def connect_mqtt():
     # client.connect("mqtt.eclipse.org", 1883, 60)
     #client.username_pw_set(username, password)
     # pitop=192.168.50.88
-    client.connect("192.168.50.88", 1883, 60)
+    if not istest:
+        client.connect("192.168.50.88", 1883, 60)
     return client
 
 def run():
