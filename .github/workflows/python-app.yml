@@ -10,6 +10,10 @@ on:
     branches: [ main ]
 
     
+defaults:
+  run:
+    working-directory: MqttTest
+    
 jobs:
   build:
 
