@@ -1,5 +1,5 @@
 from paho.mqtt import client as mqtt_client
-import time 
+import time
 
 # The callback for when the client receives a CONNACK response from the server.
 
@@ -17,21 +17,22 @@ def on_message(client, userdata, msg):
     print(msg.topic + " " + str(msg.payload))
 
 
-def connect_mqtt(istest):
+def connect_mqtt():
     client = mqtt_client.Client()
     client.on_connect = on_connect
     client.on_message = on_message
 
     # client.connect("mqtt.eclipse.org", 1883, 60)
-    #client.username_pw_set(username, password)
+    # client.username_pw_set(username, password)
     # pitop=192.168.50.88
-    if not istest:
-        client.connect("192.168.50.88", 1883, 60)
+    client.connect("192.168.50.88", 1883, 60)
     return client
 
+
 def run():
-    client = connect_mqtt(False)
+    client = connect_mqtt()
     while run:
         client.loop()
+
 
 run()
