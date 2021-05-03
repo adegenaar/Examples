@@ -30,7 +30,7 @@ def connect_mqtt(istest):
     return client
 
 def run():
-    client = connect_mqtt()
+    client = connect_mqtt(False)
     while run:
         client.loop()
 
