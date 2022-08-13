@@ -1,5 +1,5 @@
 import pytest
-import ReadTopic
+import read_topic
 
 
 def test_new_client():
