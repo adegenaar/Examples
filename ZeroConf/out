@@ -1,0 +1,240 @@
+
+Browsing ['_airplay._tcp.local.', '_androidtvremote2._tcp.local.', '_canon-chmp._tcp.local.', '_dacp._tcp.local.', '_device-info._tcp.local.', '_googlecast._tcp.local.', '_googlezone._tcp.local.', '_http._tcp.local.', '_ipp._tcp.local.', '_ipps._tcp.local.', '_mqtt._tcp.local.', '_pdl-datastream._tcp.local.', '_printer._tcp.local.', '_privet._tcp.local.', '_raop._tcp.local.', '_sftp-ssh._tcp.local.', '_sleep-proxy._udp.local.', '_smb._tcp.local.', '_spotify-connect._tcp.local.', '_ssh._tcp.local.', '_touch-able._tcp.local.', '_workstation._tcp.local.'] service(s), press Ctrl-C to exit...
+
+Service BRAVIA-4K-GB-da4703e6bec33c175d738f5277d1fd90._googlecast._tcp.local. of type _googlecast._tcp.local. state changed: ServiceStateChange.Added
+Service C4A-a3c0b6a4ea8fbba94198bb77c7257697._googlecast._tcp.local. of type _googlecast._tcp.local. state changed: ServiceStateChange.Added
+Service Chromecast-acc0b457428e827d89e18f4715f993e8._googlecast._tcp.local. of type _googlecast._tcp.local. state changed: ServiceStateChange.Added
+Info from zeroconf.get_service_info: AsyncServiceInfo(type='_googlecast._tcp.local.', name='BRAVIA-4K-GB-da4703e6bec33c175d738f5277d1fd90._googlecast._tcp.local.', addresses=[b'\xc0\xa8\x00\x9e'], port=8009, weight=0, priority=0, server='da4703e6-bec3-3c17-5d73-8f5277d1fd90.local.', properties={b'id': b'da4703e6bec33c175d738f5277d1fd90', b'cd': b'7D84F38629CEC66D7A5E4ABAC8A5B2A5', b'rm': b'1D41450D05B91161', b've': b'05', b'md': b'BRAVIA 4K GB', b'ic': b'/setup/icon.png', b'fn': b'Living Room TV', b'ca': b'461317', b'st': b'1', b'bs': b'FA8FECF0BC7A', b'nf': b'1', b'rs': b'Youtube'}, interface_index=None)
+  Name: BRAVIA-4K-GB-da4703e6bec33c175d738f5277d1fd90._googlecast._tcp.local.
+  Addresses: 192.168.0.158:8009
+  Weight: 0, priority: 0
+  Server: da4703e6-bec3-3c17-5d73-8f5277d1fd90.local.
+  Properties are:
+    b'id': b'da4703e6bec33c175d738f5277d1fd90'
+    b'cd': b'7D84F38629CEC66D7A5E4ABAC8A5B2A5'
+    b'rm': b'1D41450D05B91161'
+    b've': b'05'
+    b'md': b'BRAVIA 4K GB'
+    b'ic': b'/setup/icon.png'
+    b'fn': b'Living Room TV'
+    b'ca': b'461317'
+    b'st': b'1'
+    b'bs': b'FA8FECF0BC7A'
+    b'nf': b'1'
+    b'rs': b'Youtube'
+
+
+Info from zeroconf.get_service_info: AsyncServiceInfo(type='_googlecast._tcp.local.', name='C4A-a3c0b6a4ea8fbba94198bb77c7257697._googlecast._tcp.local.', addresses=[b'\xc0\xa8\x00\xbc'], port=8009, weight=0, priority=0, server='a3c0b6a4-ea8f-bba9-4198-bb77c7257697.local.', properties={b'id': b'a3c0b6a4ea8fbba94198bb77c7257697', b'cd': b'EF31C3488E382AABD6760F56E88FC6B5', b'rm': b'9E1AB2A31B814EA8', b've': b'05', b'md': b'C4A', b'ic': b'/setup/icon.png', b'fn': b'STR-DN1080 769D9A', b'ca': b'2052', b'st': b'2', b'bs': b'FA8FCA9489BE', b'nf': b'1', b'rs': b''}, interface_index=None)
+  Name: C4A-a3c0b6a4ea8fbba94198bb77c7257697._googlecast._tcp.local.
+  Addresses: 192.168.0.188:8009
+  Weight: 0, priority: 0
+  Server: a3c0b6a4-ea8f-bba9-4198-bb77c7257697.local.
+  Properties are:
+    b'id': b'a3c0b6a4ea8fbba94198bb77c7257697'
+    b'cd': b'EF31C3488E382AABD6760F56E88FC6B5'
+    b'rm': b'9E1AB2A31B814EA8'
+    b've': b'05'
+    b'md': b'C4A'
+    b'ic': b'/setup/icon.png'
+    b'fn': b'STR-DN1080 769D9A'
+    b'ca': b'2052'
+    b'st': b'2'
+    b'bs': b'FA8FCA9489BE'
+    b'nf': b'1'
+    b'rs': b''
+
+
+Info from zeroconf.get_service_info: AsyncServiceInfo(type='_googlecast._tcp.local.', name='Chromecast-acc0b457428e827d89e18f4715f993e8._googlecast._tcp.local.', addresses=[b'\xc0\xa8\x00\xd1'], port=8009, weight=0, priority=0, server='acc0b457-428e-827d-89e1-8f4715f993e8.local.', properties={b'id': b'acc0b457428e827d89e18f4715f993e8', b'cd': b'B634F5C036B0EE5C525C0799C2C2810C', b'rm': b'FD2B16C9D54EF5C7', b've': b'05', b'md': b'Chromecast', b'ic': b'/setup/icon.png', b'fn': b'Master Bedroom TV', b'ca': b'465413', b'st': b'0', b'bs': b'FA8FCA928F8F', b'nf': b'1', b'rs': b''}, interface_index=None)
+  Name: Chromecast-acc0b457428e827d89e18f4715f993e8._googlecast._tcp.local.
+  Addresses: 192.168.0.209:8009
+  Weight: 0, priority: 0
+  Server: acc0b457-428e-827d-89e1-8f4715f993e8.local.
+  Properties are:
+    b'id': b'acc0b457428e827d89e18f4715f993e8'
+    b'cd': b'B634F5C036B0EE5C525C0799C2C2810C'
+    b'rm': b'FD2B16C9D54EF5C7'
+    b've': b'05'
+    b'md': b'Chromecast'
+    b'ic': b'/setup/icon.png'
+    b'fn': b'Master Bedroom TV'
+    b'ca': b'465413'
+    b'st': b'0'
+    b'bs': b'FA8FCA928F8F'
+    b'nf': b'1'
+    b'rs': b''
+
+
+Service a3c0b6a4-ea8f-bba9-4198-bb77c7257697._googlezone._tcp.local. of type _googlezone._tcp.local. state changed: ServiceStateChange.Added
+Info from zeroconf.get_service_info: AsyncServiceInfo(type='_googlezone._tcp.local.', name='a3c0b6a4-ea8f-bba9-4198-bb77c7257697._googlezone._tcp.local.', addresses=[b'\xc0\xa8\x00\xbc'], port=10001, weight=28, priority=610, server='a3c0b6a4-ea8f-bba9-4198-bb77c7257697.local.', properties={b'id': b'EF31C3488E382AABD6760F56E88FC6B5', b'__common_time__': b'1|0'}, interface_index=None)
+  Name: a3c0b6a4-ea8f-bba9-4198-bb77c7257697._googlezone._tcp.local.
+  Addresses: 192.168.0.188:10001
+  Weight: 28, priority: 610
+  Server: a3c0b6a4-ea8f-bba9-4198-bb77c7257697.local.
+  Properties are:
+    b'id': b'EF31C3488E382AABD6760F56E88FC6B5'
+    b'__common_time__': b'1|0'
+
+
+Service acc0b457-428e-827d-89e1-8f4715f993e8._googlezone._tcp.local. of type _googlezone._tcp.local. state changed: ServiceStateChange.Added
+Info from zeroconf.get_service_info: AsyncServiceInfo(type='_googlezone._tcp.local.', name='acc0b457-428e-827d-89e1-8f4715f993e8._googlezone._tcp.local.', addresses=[b'\xc0\xa8\x00\xd1'], port=10001, weight=44, priority=1010, server='acc0b457-428e-827d-89e1-8f4715f993e8.local.', properties={b'id': b'B634F5C036B0EE5C525C0799C2C2810C', b'UDS': None}, interface_index=None)
+  Name: acc0b457-428e-827d-89e1-8f4715f993e8._googlezone._tcp.local.
+  Addresses: 192.168.0.209:10001
+  Weight: 44, priority: 1010
+  Server: acc0b457-428e-827d-89e1-8f4715f993e8.local.
+  Properties are:
+    b'id': b'B634F5C036B0EE5C525C0799C2C2810C'
+    b'UDS': None
+
+
+Service SONY_AUDIO._spotify-connect._tcp.local. of type _spotify-connect._tcp.local. state changed: ServiceStateChange.Added
+Service STR-DN1080 769D9A._airplay._tcp.local. of type _airplay._tcp.local. state changed: ServiceStateChange.Added
+Service 38184C769D9A@STR-DN1080 769D9A._raop._tcp.local. of type _raop._tcp.local. state changed: ServiceStateChange.Added
+Service STR-DN1080 769D9A._http._tcp.local. of type _http._tcp.local. state changed: ServiceStateChange.Added
+Info from zeroconf.get_service_info: AsyncServiceInfo(type='_spotify-connect._tcp.local.', name='SONY_AUDIO._spotify-connect._tcp.local.', addresses=[b'\xc0\xa8\x00\xbc'], port=80, weight=0, priority=0, server='Chromecast.local.', properties={b'VERSION': b'1.0', b'CPath': b'/goform/spotifyConnect'}, interface_index=None)
+  Name: SONY_AUDIO._spotify-connect._tcp.local.
+  Addresses: 192.168.0.188:80
+  Weight: 0, priority: 0
+  Server: Chromecast.local.
+  Properties are:
+    b'VERSION': b'1.0'
+    b'CPath': b'/goform/spotifyConnect'
+
+
+Info from zeroconf.get_service_info: AsyncServiceInfo(type='_airplay._tcp.local.', name='STR-DN1080 769D9A._airplay._tcp.local.', addresses=[b'\xc0\xa8\x00\xbc'], port=5000, weight=0, priority=0, server='Chromecast.local.', properties={b'deviceid': b'38:18:4C:76:9D:9A', b'features': b'0x444F8A00', b'flags': b'0x6', b'fv': b'p7.0518.00', b'model': b'MSA4G-N108', b'srcvers': b'190.9.p7'}, interface_index=None)
+  Name: STR-DN1080 769D9A._airplay._tcp.local.
+  Addresses: 192.168.0.188:5000
+  Weight: 0, priority: 0
+  Server: Chromecast.local.
+  Properties are:
+    b'deviceid': b'38:18:4C:76:9D:9A'
+    b'features': b'0x444F8A00'
+    b'flags': b'0x6'
+    b'fv': b'p7.0518.00'
+    b'model': b'MSA4G-N108'
+    b'srcvers': b'190.9.p7'
+
+
+Info from zeroconf.get_service_info: AsyncServiceInfo(type='_raop._tcp.local.', name='38184C769D9A@STR-DN1080 769D9A._raop._tcp.local.', addresses=[b'\xc0\xa8\x00\xbc'], port=5000, weight=0, priority=0, server='Chromecast.local.', properties={b'cn': b'0,1', b'da': b'true', b'et': b'0,4', b'ft': b'0x444F8A00', b'fv': b'p7.0518.00', b'md': b'0,1,2', b'am': b'MSA4G-N108', b'sf': b'0x6', b'tp': b'UDP', b'vn': b'65537', b'vs': b'190.9.p7'}, interface_index=None)
+  Name: 38184C769D9A@STR-DN1080 769D9A._raop._tcp.local.
+  Addresses: 192.168.0.188:5000
+  Weight: 0, priority: 0
+  Server: Chromecast.local.
+  Properties are:
+    b'cn': b'0,1'
+    b'da': b'true'
+    b'et': b'0,4'
+    b'ft': b'0x444F8A00'
+    b'fv': b'p7.0518.00'
+    b'md': b'0,1,2'
+    b'am': b'MSA4G-N108'
+    b'sf': b'0x6'
+    b'tp': b'UDP'
+    b'vn': b'65537'
+    b'vs': b'190.9.p7'
+
+
+Info from zeroconf.get_service_info: AsyncServiceInfo(type='_http._tcp.local.', name='STR-DN1080 769D9A._http._tcp.local.', addresses=[b'\xc0\xa8\x00\xbc'], port=80, weight=0, priority=0, server='Chromecast.local.', properties={}, interface_index=None)
+  Name: STR-DN1080 769D9A._http._tcp.local.
+  Addresses: 192.168.0.188:80
+  Weight: 0, priority: 0
+  Server: Chromecast.local.
+  No properties
+
+
+Service Living Room TV._androidtvremote2._tcp.local. of type _androidtvremote2._tcp.local. state changed: ServiceStateChange.Added
+Info from zeroconf.get_service_info: AsyncServiceInfo(type='_androidtvremote2._tcp.local.', name='Living Room TV._androidtvremote2._tcp.local.', addresses=[b'\xc0\xa8\x00\x9e'], port=6466, weight=0, priority=0, server='Android-7.local.', properties={b'bt': b'A8:6B:AD:16:3D:06'}, interface_index=None)
+  Name: Living Room TV._androidtvremote2._tcp.local.
+  Addresses: 192.168.0.158:6466, fe80::aa6b:adff:fe16:3d05:6466, 2600:1700:b491:5e0:aa6b:adff:fe16:3d05:6466, 2600:1700:b491:5e0:3c14:51d4:6bb5:dcc:6466
+  Weight: 0, priority: 0
+  Server: Android-7.local.
+  Properties are:
+    b'bt': b'A8:6B:AD:16:3D:06'
+
+
+Service Apple TV._airplay._tcp.local. of type _airplay._tcp.local. state changed: ServiceStateChange.Added
+Service B8782E232BAF@Apple TV._raop._tcp.local. of type _raop._tcp.local. state changed: ServiceStateChange.Added
+Service 01DABE41D541D7BE._touch-able._tcp.local. of type _touch-able._tcp.local. state changed: ServiceStateChange.Added
+Service 70-35-60-63.1 Apple TV._sleep-proxy._udp.local. of type _sleep-proxy._udp.local. state changed: ServiceStateChange.Added
+Service Apple TV._device-info._tcp.local. of type _device-info._tcp.local. state changed: ServiceStateChange.Updated
+Info from zeroconf.get_service_info: AsyncServiceInfo(type='_airplay._tcp.local.', name='Apple TV._airplay._tcp.local.', addresses=[b'\xc0\xa8\x00v'], port=7000, weight=0, priority=0, server='Apple-TV.local.', properties={b'deviceid': b'B8:78:2E:23:2B:AF', b'features': b'0x5A7FFFF7,0x1E', b'flags': b'0x44', b'model': b'AppleTV3,2', b'pk': b'ccba33b1f867f268bff5d7af8443000c8dc6ed36d7df4e96109d118343617129', b'pi': b'8f9271c2-9352-42b1-b5e5-bba092ccb133', b'srcvers': b'220.68', b'osvers': b'8.4.4', b'vv': b'2'}, interface_index=None)
+  Name: Apple TV._airplay._tcp.local.
+  Addresses: 192.168.0.118:7000, 2600:1700:b491:5e0::544:7000, 2600:1700:b491:5e0:10e7:e835:4238:b464:7000, fe80::cd2:39d6:a977:c90a:7000
+  Weight: 0, priority: 0
+  Server: Apple-TV.local.
+  Properties are:
+    b'deviceid': b'B8:78:2E:23:2B:AF'
+    b'features': b'0x5A7FFFF7,0x1E'
+    b'flags': b'0x44'
+    b'model': b'AppleTV3,2'
+    b'pk': b'ccba33b1f867f268bff5d7af8443000c8dc6ed36d7df4e96109d118343617129'
+    b'pi': b'8f9271c2-9352-42b1-b5e5-bba092ccb133'
+    b'srcvers': b'220.68'
+    b'osvers': b'8.4.4'
+    b'vv': b'2'
+
+
+Info from zeroconf.get_service_info: AsyncServiceInfo(type='_raop._tcp.local.', name='B8782E232BAF@Apple TV._raop._tcp.local.', addresses=[b'\xc0\xa8\x00v'], port=7000, weight=0, priority=0, server='Apple-TV.local.', properties={b'cn': b'0,1,2,3', b'da': b'true', b'et': b'0,3,5', b'ft': b'0x5A7FFFF7,0x1E', b'md': b'0,1,2', b'am': b'AppleTV3,2', b'pk': b'ccba33b1f867f268bff5d7af8443000c8dc6ed36d7df4e96109d118343617129', b'sf': b'0x44', b'tp': b'UDP', b'vn': b'65537', b'vs': b'220.68', b'ov': b'8.4.4', b'vv': b'2'}, interface_index=None)
+  Name: B8782E232BAF@Apple TV._raop._tcp.local.
+  Addresses: 192.168.0.118:7000, 2600:1700:b491:5e0::544:7000, 2600:1700:b491:5e0:10e7:e835:4238:b464:7000, fe80::cd2:39d6:a977:c90a:7000
+  Weight: 0, priority: 0
+  Server: Apple-TV.local.
+  Properties are:
+    b'cn': b'0,1,2,3'
+    b'da': b'true'
+    b'et': b'0,3,5'
+    b'ft': b'0x5A7FFFF7,0x1E'
+    b'md': b'0,1,2'
+    b'am': b'AppleTV3,2'
+    b'pk': b'ccba33b1f867f268bff5d7af8443000c8dc6ed36d7df4e96109d118343617129'
+    b'sf': b'0x44'
+    b'tp': b'UDP'
+    b'vn': b'65537'
+    b'vs': b'220.68'
+    b'ov': b'8.4.4'
+    b'vv': b'2'
+
+
+Info from zeroconf.get_service_info: AsyncServiceInfo(type='_touch-able._tcp.local.', name='01DABE41D541D7BE._touch-able._tcp.local.', addresses=[b'\xc0\xa8\x00v'], port=3689, weight=0, priority=0, server='Apple-TV.local.', properties={b'txtvers': b'1', b'atSV': b'65541', b'DbId': b'6EC0776E55250865', b'CtlN': b'Apple TV', b'DvTy': b'AppleTV', b'DvSv': b'1792', b'atCV': b'65539', b'Ver': b'131077'}, interface_index=None)
+  Name: 01DABE41D541D7BE._touch-able._tcp.local.
+  Addresses: 192.168.0.118:3689, 2600:1700:b491:5e0::544:3689, 2600:1700:b491:5e0:10e7:e835:4238:b464:3689, fe80::cd2:39d6:a977:c90a:3689
+  Weight: 0, priority: 0
+  Server: Apple-TV.local.
+  Properties are:
+    b'txtvers': b'1'
+    b'atSV': b'65541'
+    b'DbId': b'6EC0776E55250865'
+    b'CtlN': b'Apple TV'
+    b'DvTy': b'AppleTV'
+    b'DvSv': b'1792'
+    b'atCV': b'65539'
+    b'Ver': b'131077'
+
+
+Info from zeroconf.get_service_info: AsyncServiceInfo(type='_sleep-proxy._udp.local.', name='70-35-60-63.1 Apple TV._sleep-proxy._udp.local.', addresses=[b'\xc0\xa8\x00v'], port=51055, weight=0, priority=0, server='Apple-TV.local.', properties={}, interface_index=None)
+  Name: 70-35-60-63.1 Apple TV._sleep-proxy._udp.local.
+  Addresses: 192.168.0.118:51055, 2600:1700:b491:5e0::544:51055, 2600:1700:b491:5e0:10e7:e835:4238:b464:51055, fe80::cd2:39d6:a977:c90a:51055
+  Weight: 0, priority: 0
+  Server: Apple-TV.local.
+  No properties
+
+
+Service Master Bedroom TV._androidtvremote2._tcp.local. of type _androidtvremote2._tcp.local. state changed: ServiceStateChange.Added
+Info from zeroconf.get_service_info: AsyncServiceInfo(type='_androidtvremote2._tcp.local.', name='Master Bedroom TV._androidtvremote2._tcp.local.', addresses=[b'\xc0\xa8\x00\xd1'], port=6466, weight=0, priority=0, server='Android-5.local.', properties={b'bt': b'DC:E5:5B:98:0C:C9'}, interface_index=None)
+  Name: Master Bedroom TV._androidtvremote2._tcp.local.
+  Addresses: 192.168.0.209:6466, fe80::1c4b:f350:3e1e:4ba7:6466, 2600:1700:b491:5e0:7134:1650:dc16:47e4:6466, 2600:1700:b491:5e0:9573:8f9e:783c:d7c7:6466
+  Weight: 0, priority: 0
+  Server: Android-5.local.
+  Properties are:
+    b'bt': b'DC:E5:5B:98:0C:C9'
+
+
+Service FileDump._smb._tcp.local. of type _smb._tcp.local. state changed: ServiceStateChange.Added
+Service FileDump._device-info._tcp.local. of type _device-info._tcp.local. state changed: ServiceStateChange.Added
+Service iTunes_Ctrl_001132B2EAFE6012._dacp._tcp.local. of type _dacp._tcp.local. state changed: ServiceStateChange.Added
+Service iTunes_Ctrl_001132B2EAFE6011._dacp._tcp.local. of type _dacp._tcp.local. state changed: ServiceStateChange.Added
+Service Mosquitto MQTT server on FileDump._mqtt._tcp.local. of type _mqtt._tcp.local. state changed: ServiceStateChange.Added
+Service FileDump._http._tcp.local. of type _http._tcp.local. state changed: ServiceStateChange.Added
+Info from zeroconf.get_service_info: AsyncServiceInfo(type='_smb._tcp.local.', name='FileDump._smb._tcp.local.', addresses=[b'\xc0\xa8\x00|'], port=445, weight=0, priority=0, server='FileDump.local.', properties={}, interface_index=None)
+  Name: FileDump._smb._tcp.local.
+  Addresses: 192.168.0.124:445, 2600:1700:b491:5e0::4e0:445, 2600:1700:b491:5e0:211:32ff:feb2:eafe:445
+  Weight: 0, priority: 0
