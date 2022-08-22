@@ -1,0 +1,23 @@
+INFO:bleak.backends.winrt.client:Services resolved for BleakClientWinRT (A5:B3:C2:22:15:24)
+INFO:__main__:Connected: True
+INFO:__main__:Received callback data via async queue at 1660621047.9443083: bytearray(b'\x19\xf0\x04\x008\x80')
+INFO:__main__:Received callback data via async queue at 1660621048.1543128: bytearray(b'\x19\xf0\x04\x00\x0f\x80')
+INFO:__main__:Received callback data via async queue at 1660621048.378899: bytearray(b'\x19\xf0\x04\x00\x05\x80')
+INFO:__main__:Received callback data via async queue at 1660621048.5736828: bytearray(b'\x19\xf0\x04\x00\x11\x80')
+INFO:__main__:Received callback data via async queue at 1660621048.769684: bytearray(b'\x19\xf0\x04\x00N\x80')
+INFO:__main__:Received callback data via async queue at 1660621048.9946845: bytearray(b'\x19\xf0\x04\x00Q\x80')
+INFO:__main__:Received callback data via async queue at 1660621049.1736853: bytearray(b'\x19\xf0\x04\x007\x80')
+INFO:__main__:Received callback data via async queue at 1660621049.2196894: bytearray(b'\x19\xf0\x04\x00K\x80')
+INFO:__main__:Received callback data via async queue at 1660621049.3996835: bytearray(b'\x19\xf0\x04\x00D\x80')
+INFO:__main__:Received callback data via async queue at 1660621049.5796835: bytearray(b'\x19\xf0\x04\x00\x07\x80')
+INFO:__main__:Received callback data via async queue at 1660621049.8036816: bytearray(b'\x19\xf0\x04\x00\x02\x80')
+INFO:__main__:Received callback data via async queue at 1660621050.0296838: bytearray(b'\x19\xf0\x04\x00\x03\x80')
+INFO:__main__:Received callback data via async queue at 1660621050.5696833: bytearray(b'\x19\xf0\x04\x00\x03\x80')
+INFO:__main__:Received callback data via async queue at 1660621051.0196884: bytearray(b'\x19\xf0\x04\x00\x02\x80')
+INFO:__main__:Received callback data via async queue at 1660621051.5596828: bytearray(b'\x19\xf0\x04\x00\x02\x80')
+INFO:__main__:Received callback data via async queue at 1660621051.784683: bytearray(b'\x19\xf0\x04\x00\x04\x80')
+INFO:__main__:Received callback data via async queue at 1660621052.0097144: bytearray(b'\x19\xf0\x04\x00\x05\x80')
+INFO:__main__:Received callback data via async queue at 1660621052.414682: bytearray(b'\x19\xf0\x04\x00\x07\x80')
+INFO:__main__:Received callback data via async queue at 1660621052.9542348: bytearray(b'\x19\xf0\x04\x00\x07\x80')
+INFO:__main__:Received callback data via async queue at 1660621053.4041126r loop...
+INFO:__main__:Main method done.
