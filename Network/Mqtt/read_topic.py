@@ -1,19 +1,20 @@
 """ module docstring """
+import json
 import paho.mqtt.client as mqtt
-import json 
 
 
-def on_connect(client: mqtt.Client, userdata, flags, rc):
+def on_connect(client: mqtt.Client, userdata, flags, retcode):
     """
     The callback for when the client receives
     a CONNACK response from the server.
     """
-    print("Connected with result code " + str(rc))
+    print("Connected with result code " + str(retcode))
 
     # Subscribing in on_connect() means that if we lose the connection and
     # reconnect then subscriptions will be renewed.
     client.subscribe("tasmota/discovery/#" )
-
+    print(userdata)
+    print(flags)
 
 def on_message(client: mqtt.Client, userdata, msg):
     """
@@ -37,6 +38,8 @@ def on_message(client: mqtt.Client, userdata, msg):
 
     if msg.topic:
         print(msg.topic)
+
+    print(client)
 
 
 def connect_mqtt(server: str, port: int):
