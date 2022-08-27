@@ -1,6 +1,8 @@
 """ module docstring """
 import json
+import logging
 import paho.mqtt.client as mqtt
+
 
 
 def on_connect(client: mqtt.Client, userdata, flags, retcode):
@@ -10,13 +12,15 @@ def on_connect(client: mqtt.Client, userdata, flags, retcode):
     """
     print("Connected with result code " + str(retcode))
 
+    topic = userdata['topic']
     # Subscribing in on_connect() means that if we lose the connection and
     # reconnect then subscriptions will be renewed.
-    client.subscribe("tasmota/discovery/#" )
+#    client.subscribe("tasmota/discovery/#" )
+    client.subscribe(topic)
     print(userdata)
     print(flags)
 
-def on_message(client: mqtt.Client, userdata, msg):
+def on_message(_: mqtt.Client, userdata, msg):
     """
     on_message The callback for when a PUBLISH message is received from the server.
 
@@ -25,34 +29,34 @@ def on_message(client: mqtt.Client, userdata, msg):
         userdata (_type_): _description_
         msg (_type_): _description_
     """
-    #print(str(msg.payload))
-    #print(msg.topic + " " + str(msg.payload))
-
-    payload = json.loads(msg.payload)
-    # if payload:
-    #     print("payload = " + json.dumps(payload))
-
     if userdata is not None:
+        logger = userdata['logger']
+        payload = json.loads(msg.payload)
+        if payload:
+            logger.debug("payload = %s", json.dumps(payload))
         userdata[msg.topic]= payload
-        #print(userdata)
-
-    if msg.topic:
-        print(msg.topic)
-
-    print(client)
+        if msg.topic:
+            logger.debug("topic: %s", msg.topic)
 
 
-def connect_mqtt(server: str, port: int):
+def connect_mqtt(server: str, port: int, topic:str):
     """
     connect_mqtt Connect to an mqtt server
 
     Returns:
         _type_: Mqtt.Client
     """
-    devices = {}
+    logger = logging.getLogger(__name__)
+
+    devices = {
+        "topic": topic,
+        "logger": logger
+    }
     client = mqtt.Client(userdata=devices)
     client.on_connect = on_connect
     client.on_message = on_message
+
+    client.enable_logger(logger)
 
     # client.connect("mqtt.eclipse.org", 1883, 60)
     # client.username_pw_set(username, password)
@@ -63,14 +67,13 @@ def connect_mqtt(server: str, port: int):
     return client
 
 
-def run():
-    """
-    run Main entry point
-    """
-    client = connect_mqtt("filedump.local", 1883)
-    while run:
-        client.loop()
-
-
 if __name__ == "__main__":
-    run()
+    logging.basicConfig(level=logging.DEBUG)
+#    mqtt_client = connect_mqtt("filedump.local", 1883)
+    try:
+        mqtt_client = connect_mqtt("test.mosquitto.org", 1883,"DataHub")
+        mqtt_client.loop_forever()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        mqtt_client.disconnect()

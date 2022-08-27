@@ -2,7 +2,7 @@
 
 """ Example of resolving a service with a known name """
 import logging
-from time import sleep
+import time
 from typing import Any
 from zeroconf import IPVersion, ServiceBrowser, ServiceStateChange, Zeroconf
 
@@ -21,7 +21,7 @@ def _on_service_state_change(
         name (str): _description_
         state_change (ServiceStateChange): _description_
     """
-    logging.debug(f"Service {name} of type {service_type} state changed: {state_change}")
+    logging.debug("Service %s of type %s state changed: %s", name, service_type, state_change)
 
     if state_change is ServiceStateChange.Added:
         info = zeroconf.get_service_info(type_=service_type, name=name, timeout=1500)
@@ -41,7 +41,20 @@ def mdns_service_discovery(service: str = "_mqtt._tcp.local.", timeout: int = 5)
     """
     zc = Zeroconf(ip_version=IPVersion.All)
     _ = ServiceBrowser(zc, service, handlers=[_on_service_state_change])
-    sleep(timeout)
+    #    sleep(timeout)
+    # enforce the timeout
+    timeout = time.time() + timeout
+    try:
+        while time.time() < timeout:
+            # bounce as soon as we have one device
+            if len(_infos) > 0:
+                break
+            time.sleep(0.05)
+    except KeyboardInterrupt:  # pragma: no cover
+        pass
+    finally:
+        zc.close()
+
     results = []
     for info in _infos:
         results.append((info.server, info.port, info.parsed_addresses()))
@@ -49,6 +62,6 @@ def mdns_service_discovery(service: str = "_mqtt._tcp.local.", timeout: int = 5)
 
 
 if __name__ == "__main__":
-    ret = mdns_service_discovery()
+    ret = mdns_service_discovery("_mqtt._tcp.local.")
 
     print(ret)
