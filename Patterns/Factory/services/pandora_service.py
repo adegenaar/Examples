@@ -15,11 +15,13 @@ class PandoraService:
         self._key = consumer_key
         self._secret = consumer_secret
 
-    def test_connection(self):
+    def test_connection(self) -> bool:
         """
         stub for testing the connection to Pandora
         """
-        print(f"Accessing Pandora with {self._key} and {self._secret}")
+        # print(f"Accessing Pandora with {self._key} and {self._secret}")
+        print("Success!")
+        return True
 
 
 class PandoraServiceBuilder:
