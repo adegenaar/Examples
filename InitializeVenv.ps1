@@ -33,5 +33,5 @@ else {
      
 & ".\.venv\scripts\activate.ps1"
 & 'C:\Windows\py.exe' -m pip install --upgrade pip
-& 'pip' install setuptools wheel black pytest pylint wheel
+& 'pip' install wheel setuptools black pytest pylint 
 & 'pip' install -r requirements.txt
