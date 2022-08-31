@@ -1,23 +1,34 @@
 # Example Python Code
 
-## Asyncio
-
-## Custom Context Managers
-
-## Database examples
-
-### Sqllite3
-
-### MongoDB Example
-
-### SqlAlchemy Example
-
-## Custom decorators
-
-## Encryption examples
-
-## MQTT Examples
-
-## Custom plugins
-
-## Requests
+- ArgsKwargs - tips & tricks using *args and **qwargs
+- Asyncio
+- Bluetooth
+  - Bleak
+  - pyBluez (tbd)
+- Configuration
+- ContextManager
+  - Custom context manager for sqllite
+- Database
+  - pyOdbc connection example
+  - pyMongo connection example
+  - sqlAlchemy example
+  - sqllite connection example (tbd)
+- Decorators
+- Encrypt
+  - cryptography examples
+- Environment
+  - python-dotenv example (useful for isolating api keys)
+- FileSystem
+  - FileWatcher example
+- GoogleTranslate
+- GUI
+- importlib
+- Network
+  - Mqtt examples
+  - Multicast socket example
+  - Requests examples
+  - uPnP examples
+  - WebSockets examples
+  - ZeroConf mDNS example
+- Patterns
+  - python patterns
