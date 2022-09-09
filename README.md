@@ -27,6 +27,7 @@
   - Mqtt examples
   - Multicast socket example
   - Requests examples
+  - Sockets examples
   - uPnP examples
   - WebSockets examples
   - ZeroConf mDNS example

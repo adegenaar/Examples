@@ -1,5 +1,5 @@
 pylint
 black
-cryptography
 json
 dateutil
+cryptography
