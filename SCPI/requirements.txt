@@ -1,0 +1,14 @@
+wheel
+black
+pylint
+quantiphy
+pyvisa
+pyvisa-py
+#network interface
+psutil
+zeroconf
+#serial interface
+pyserial
+#USB interface
+pyusb
+libusb_package
