@@ -1,0 +1,7 @@
+wheel
+pip
+setuptools
+black
+pytest
+pytest-cov
+pylint
