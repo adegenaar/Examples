@@ -89,11 +89,11 @@ class Events:
             if name not in self.__events__:
                 raise AttributeError("Event '{name}' is not declared")
         elif hasattr(self.__class__, "__events__"):
-            if name not in self.__class__.__events__:
+            if name not in self.__class__.__events__:  # type: ignore
                 raise AttributeError("Event '{name}' is not declared")
 
-        self.__dict__[name] = event = self.__event_slot_cls__(name)
-        return event
+        self.__dict__[name] = theevent = self.__event_slot_cls__(name)
+        return theevent
 
     def __getitem__(self, item):
         return self.__dict__[item]
@@ -103,7 +103,7 @@ class Events:
 
     __str__ = __repr__
 
-    def __len__(self):
+    def __len__(self) -> int:
         return len(list(self.__iter__()))
 
     def __iter__(self) -> Generator[_EventSlot, Any, None]:
@@ -131,39 +131,43 @@ if __name__ == "__main__":
 
     MyEvents = Events(("on_change", "on_delete"))
 
-    MyEvents.on_change += on_change_callback
-    MyEvents.on_delete += on_delete_callback_args
+    MyEvents.on_change += on_change_callback  # type: ignore # pylint: disable=E1101
+    MyEvents.on_delete += on_delete_callback_args  # type: ignore # pylint: disable=E1101
 
     # fire the change event
-    MyEvents.on_change()
+    MyEvents.on_change()  # pylint: disable=E1101
 
     # fire the delete event
-    MyEvents.on_delete("arg1", 2, ("three", 3), key="key")
+    MyEvents.on_delete("arg1", 2, ("three", 3), key="key")  # pylint: disable=E1101
 
     class MyEvents2(Events):
+        """test class"""
+
         def __init__(self) -> None:
-            super().__init__(("on_eventOne",))
+            super().__init__(("on_eventone",))
             # __events__: tuple[str] = ("on_eventOne",)
             # self.__slots__ = ("on_eventOne",)
 
     # MyEvents2.on_eventOne += on_change_callback
 
     myevent = MyEvents2()
-    myevent.on_eventOne += on_change_callback
+    myevent.on_eventone += on_change_callback  # type: ignore # pylint: disable=E1101
 
     class CustomEventSlot(_EventSlot):
         """Custom event slot"""
 
     allevents: tuple[str, str] = ("on_change", "on_edit")
 
-    class MyEvents:
+    class MyEvents3:
+        """test class level events declarations"""
+
         events = Events(events=allevents, event_slot_cls=CustomEventSlot)
-        events.on_change += on_change_callback
-        events.on_change += on_change_callback
-        events.on_edit += on_change_callback
+        events.on_change += on_change_callback  # type: ignore # pylint: disable=E1101
+        events.on_change += on_change_callback  # type: ignore # pylint: disable=E1101
+        events.on_edit += on_change_callback  # type: ignore # pylint: disable=E1101
 
     i = 0
-    for event in MyEvents.events:
+    for event in MyEvents3.events:
         i += 1
         assert isinstance(event, CustomEventSlot)
     assert i == 2
