@@ -18,6 +18,7 @@
   - cryptography examples
 - Environment
   - python-dotenv example (useful for isolating api keys)
+- Events - .Net style events in Python
 - FileSystem
   - FileWatcher example
 - GoogleTranslate
